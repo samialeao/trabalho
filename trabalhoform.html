@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Formulario</h2>
+        <p>Complete as informação abaixo.</p>
+        <br>
+    </div>
+     <form action="">
+        <fieldset>
+            <div>
+            <label>Nome</label>
+            <input type="text" name="Nome" id="Nome">
+             </div>
+             <div>
+                <label>Sobrenome</label>
+                <input type="text" name="Sobrenome" id="Sobrenome">
+             </div>
+        </fieldset>
+        <div>
+            <label>E-mail</label>
+            <input type="email" name="E-mail" id="E-mail">
+        </div>
+        <div>
+            <label>Que tipo de gênero você se considera?</label>
+            <label>
+                <input type="radio" name="gênero" value="Feminino" checked>Feminino
+            </label>
+            <label>
+                <input type="radio" name="gênero" value="Masculino" >Masculino
+            </label>
+            <label>
+                <input type="radio" name="gênero" id="Nula">Nula
+            </label>
+          
+        </div>
+        <div>
+            <label>Cidade</label>
+            <select id="Cidade">
+                <option selected disabled value="">Selecione</option>
+                <option>Alto Santo</option>
+                <option>Fortaleza</option>
+                <option>Russas</option>
+                <option>Aracati</option>
+                <option>Quixadá</option>
+            </select>
+        </div>
+        <fieldset>
+            <label>Selecione as tecnologia que você conhece:</label><br><br>
+            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HMTL">
+            <label for="tecnologia1">HTML</label>
+            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="JavaScript">
+            <label for="tecnologia2">JavaScript</label>
+            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="CSS">
+            <label for="tecnologia3">CSS</label>
+            <input type="checkbox" id="tecnologia4" name="tecnologia4" value="C#">
+            <label for="tecnologia4">C#</label>
+            <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Java">
+            <label for="tecnologia4">Java</label>
+            <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+            <label for="tecnologia6">Python</label>
+        </fieldset>
+        <div>
+            <br>
+            <label>Fale um pouco das suas experiêcias com a área</label>
+            <textarea name="experiecias" id="experiecias" style="" rows="6"></textarea>
+        </div>
+     </form>
+</body>
+</html>
