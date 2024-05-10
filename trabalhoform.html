@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trabalhoform.css">
     <title>Document</title>
 </head>
 <body>
     <div>
-        <h2 id="titulo">Formulario</h2>
+        <h1 id="titulo">Formulario</h1>
         <p id="subtitulo">Complete as informação abaixo.</p>
         <br>
     </div>
      <form action="">
         <fieldset class="grupo">
-            <div>
-            <label>Nome</label>
-            <input type="text" name="Nome" id="Nome">
+            <div class="campo">
+            <label for="Nome"> <strong>Nome</strong></label>
+            <input type="text" name="Nome" id="Nome" required>
              </div>
-             <div>
-                <label>Sobrenome</label>
-                <input type="text" name="Sobrenome" id="Sobrenome">
+             <div class="campo">
+                <label for="Sobrenome"> <strong>Sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
              </div>
         </fieldset>
-        <div>
-            <label>E-mail</label>
-            <input type="email" name="E-mail" id="E-mail">
+        <div class="campo">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="E-mail" id="E-mail" required>
         </div>
-        <div>
+        <div class="campo">
             <label>Que tipo de gênero você se considera?</label>
             <label>
                 <input type="radio" name="gênero" value="Feminino" checked>Feminino
@@ -39,8 +40,8 @@
             </label>
           
         </div>
-        <div>
-            <label>Cidade</label>
+        <div class="campo">
+            <label for="cidade">Cidade</label>
             <select id="Cidade">
                 <option selected disabled value="">Selecione</option>
                 <option>Alto Santo</option>
@@ -51,6 +52,7 @@
             </select>
         </div>
         <fieldset class="grupo">
+            <div id="check">
             <label>Selecione as tecnologia que você conhece:</label><br><br>
             <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HMTL">
             <label for="tecnologia1">HTML</label>
@@ -64,13 +66,14 @@
             <label for="tecnologia4">Java</label>
             <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
             <label for="tecnologia6">Python</label>
+        </div>
         </fieldset>
-        <div>
+        <div class="campo">
             <br>
             <label>Fale um pouco das suas experiêcias com a área</label>
             <textarea name="experiecias" id="experiecias" style="width: 26em;" rows="6"></textarea>
         </div>
-        <button type="submit">Concluido</button>
+        <button type="submit" class="botao">Concluido</button>
      </form>
 </body>
 </html>
